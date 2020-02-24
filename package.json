@@ -1,0 +1,37 @@
+{
+  "name": "typescript-webpack-on2-starter-kit",
+  "version": "1.0.0",
+  "description": "TypeScript + Webpack starter kit",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development --colors && npm run server && concurrently -r -n \"Webpack,Nodemon\" \"npm run webpack-watch\"",
+    "server": "webpack-dev-server --open",
+    "webpack-watch": "webpack --watch --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/on2-dev/typescript-webpack-starter-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/on2-dev/typescript-webpack-starter-kit/issues"
+  },
+  "homepage": "https://github.com/on2-dev/typescript-webpack-starter-kit#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "nodemon": "^2.0.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-livereload-plugin": "^2.2.0"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.2"
+  }
+}
