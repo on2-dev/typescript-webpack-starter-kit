@@ -31,13 +31,14 @@
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
-    "collectCoverageFrom": [      
+    "collectCoverageFrom": [
       "src/**/{!(index),}.ts",
       "!<rootDir>/node_modules/",
       "!<rootDir>/path/to/dir/"
     ],
     "testPathIgnorePatterns": [
-      "./src/index.ts"
+      "./src/index.ts",
+      "./dist"
     ],
     "coverageThreshold": {
       "global": {
@@ -47,7 +48,9 @@
         "statements": 90
       }
     },
-    "coverageReporters": ["text"]
+    "coverageReporters": [
+      "text"
+    ]
   },
   "devDependencies": {
     "@types/jest": "^25.1.3",
@@ -55,6 +58,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "jest": "^25.1.0",
     "nodemon": "^2.0.2",
+    "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
