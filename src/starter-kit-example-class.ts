@@ -5,4 +5,12 @@ export default class On2StarterKit {
   hello()  {
     return true;
   }
+
+  bla(p?: boolean) {
+    if (p) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

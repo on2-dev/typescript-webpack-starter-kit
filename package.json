@@ -31,10 +31,13 @@
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
+    "collectCoverageFrom": [      
+      "src/**/{!(index),}.ts",
       "!<rootDir>/node_modules/",
       "!<rootDir>/path/to/dir/"
+    ],
+    "testPathIgnorePatterns": [
+      "./src/index.ts"
     ],
     "coverageThreshold": {
       "global": {

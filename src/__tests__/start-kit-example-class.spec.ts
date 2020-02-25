@@ -8,4 +8,8 @@ describe('On2StarterKit', () => {
   it('hello', () => {
     expect(start.hello()).toBe(true);
   });
+  it('bla', () => {
+    expect(start.bla(true)).toBe(true);
+    expect(start.bla()).toBe(false);
+  });
 });
