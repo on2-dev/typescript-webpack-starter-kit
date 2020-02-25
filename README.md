@@ -9,3 +9,13 @@ npm install
 ```
 npm start
 ```
+
+## Test
+```
+npm run test
+```
+
+## Coverage
+```
+npm run test --coverage
+```
